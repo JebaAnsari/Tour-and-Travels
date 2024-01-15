@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;0,900;1,700&display=swap');
+
+:root{
+   --main-color:#ge44ad;
+   --black:#222;
+   --white-:#fff;
+   --light-black:#777;
+   --light-white:#fff9;
+   --dark-bg:rgba(0,0,0,.7);
+   --light-bg:#eee;
+   --border:.1rem solid var(--black);
+   --box-shadow:0,.5rem 1rem rgba(0.0.0..1);
+   --text-shadow:0 1.5rem 3rem rgba(0,0,0,.3)
+   
+
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin: 0;padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+
+}
+html::-webkit-scrollbar{
+   width: 1rem;
+
+}
+html::-webkit-scrollbar-track{
+background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+background-color: var(--main-color);
+}
+
+section{
+   padding: 5rem 10%;
+}
+
+
+
+.header{
+   position:sticky;
+   top:0;
+   left:0;
+   right:0;
+   z-index:1000;
+   background-color: var(--white);
+   display: flex;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   box-shadow: var(--box-shadow);
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header .logo{
+   font-size: 2.5rem;
+   color: var(--black);
+}
+.header .navbar a{
+   font-size: 2rem;
+   margin-left: 2rem;
+   color: var(--black);
+}
+.header .navbar a:hover{
+   color: var(--black);
+
+}
+
+#menu-btn{
+   font-size: 2.5rem;
+   cursor: pointer;
+   color: var(--black);
+   display: none;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heading{
+    background-size: cover !important;
+    background-position: center !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: var(--white);
+    text-shadow: var(--text-shadow);
+}
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:3rem;
+ }
+ 
+ .about .image{
+    flex:1 1 41rem;
+ }
+ 
+ .about .image img{
+    width: 50%;
+ }
+ 
+ .about .content{
+    flex:1 1 41rem;
+    text-align: center;
+ }
+ 
+ .about .content h3{
+    font-size: 3rem;
+    color:var(--black);
+ }
+ 
+ .about .content p{
+    font-size: 1.5rem;
+    color:var(--light-black);
+    line-height: 2;
+    padding:1rem 0;
+ }
+ 
+ .about .content .icons-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: flex-end;
+ }
+ 
+ .about .content .icons-container .icons{
+    background: var(--light-bg);
+    padding:2rem;
+    flex:1 1 16rem;
+
+ }
+ 
+ .about .content .icons-container .icons i{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color:var(--main-color);
+ }
+ 
+ .about .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color:var(--light-black);
+    display:block;
+ }
+ .reviews{
+   background: var(--light-bg);
+ }
+ .reviews .slide{
+   padding: 2rem;
+   /* border: var(--border); */
+   border: 1px solid;
+   background: var(--white);
+   text-align: center;
+   box-shadow: var(--box-shadow);
+   user-select: none;
+ }
+ .reviews .slide .stars{
+   padding-bottom: 5rem;
+ }
+
+ .reviews .slide .stars i{
+   font-size: 1.7rem;
+   /* color: var(--main-color); */
+color: black;   
+
+ }
+.reviews.slide p{
+font-size: 1.5rem;
+color:var(--light-black);
+line-height:2;
+padding:1rem 0;
+}
+.reviews .slide h3{
+   font-size: 2rem;
+   color: var(--black);
+}
+.reviews .slide span{
+font-size: 1.5rem;
+color: var(--maian-color);
+display: block;
+}
+
+.reviews .slide img{
+   height:7rem;
+   width: 7rem;
+   border-radius: 50%;
+   margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:1200px){
+
+section{
+   padding: 3rem 5%;
+}
+}
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+   section{
+      padding: 3rem 2rem;
+   }
+}
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+   section{
+      padding: 3rem 2rem;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* booking css */
+.booking .book-form{
+padding: 2rem;
+background: var(--light-bg);
+}
+
+.booking .book-form .flex{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;
+
+}
+.booking .book-form .flex .inputBox{
+   flex:1 1 41rem;
+
+}
+
+.booking .book-form .flex .inputBox span{
+font-size: 1.5rem;
+color: var(--light-black);
+}
+.booking .book-form .btn{
+   margin-top: 2rem;
+}
+
+
