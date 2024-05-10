@@ -73,7 +73,6 @@ section{
 }
 .header .navbar a:hover{
    color: var(--black);
-
 }
 
 #menu-btn{
@@ -82,37 +81,6 @@ section{
    color: var(--black);
    display: none;
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .heading{
     background-size: cover !important;
     background-position: center !important;
